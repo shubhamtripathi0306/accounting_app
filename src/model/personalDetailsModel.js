@@ -23,7 +23,7 @@ const userSchema = new mongoose.Schema(
       unique: true,
     },
     address_Information:{
-      type: Number,
+      type: String,
       required: true,
     }
   },

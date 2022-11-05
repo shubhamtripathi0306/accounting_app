@@ -2,6 +2,11 @@ const mongoose = require("mongoose");
 
 const companySchema = new mongoose.Schema(
   {
+    companyLogo : { 
+      type: String, // s3 link
+      required: true, 
+      trim: true
+  }, 
     business_Name: {
       type: String,
       required: false,

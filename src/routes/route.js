@@ -1,10 +1,13 @@
 const express = require('express')
 const router = express.Router()
-const {adminLogin,adminSignUp}= require("../controllers/adminController")
-const { createfeedback, updatefeedback, deleteFeedback}= require("../controllers/feedbackController")
+const{userRegistration} = require('../controllers/personController')
+const{companyRegistration} = require('../controllers/companyController')
 
 
-router.post('/createProduct', createProduct)
+router.post('/userSignUp', userRegistration)
+
+router.post('/companySignUp', companyRegistration)
+
 
 
 module.exports = router
